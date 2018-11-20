@@ -28,7 +28,7 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'terraform-20181114172930261000000001.cw4bwwnwna9r.eu-west-1.rds.amazonaws.com';
+$cfg['Servers'][$i]['host'] = 'terraform-20181120184149327000000001.cw4bwwnwna9r.eu-west-1.rds.amazonaws.com';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 

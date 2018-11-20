@@ -1,4 +1,10 @@
 ---
+- name: Create phpmyadmin directory
+  file:
+    path: /var/www/html/phpmyadmin
+    state: directory
+    
+
 - name: Download and extract phpMyAdmin archive
   unarchive: 
     src: https://files.phpmyadmin.net/phpMyAdmin/4.8.3/phpMyAdmin-4.8.3-all-languages.tar.gz
