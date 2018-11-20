@@ -1,0 +1,11 @@
+---
+- name: Download and extract phpMyAdmin archive
+  unarchive: 
+    src: https://files.phpmyadmin.net/phpMyAdmin/4.8.3/phpMyAdmin-4.8.3-all-languages.tar.gz
+    dest: /var/www/html/phpmyadmin
+    remote_src: yes
+
+- name: Copy phpMyAdmin config file
+  template: 
+    src: config.inc.php 
+    dest: /var/www/html/phpmyadmin/config.inc.php 

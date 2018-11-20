@@ -1,0 +1,14 @@
+---
+
+- name: Install Nginx, PHP, PHP-FPM and phpMyAdmin
+  hosts: PMA
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  roles:
+    - nginx
+    - php
+    - php-fpm
+    - phpmyadmin
+    - start-services

@@ -1,0 +1,11 @@
+---
+- name: Install PHP-FPM
+  yum: 
+    name: php72-fpm
+    state: present
+
+- name: Copy php-fpm configuration
+  template: 
+    src: www.conf 
+    dest: /etc/php-fpm.d/www.conf
+#   notify: restart php-fpm
